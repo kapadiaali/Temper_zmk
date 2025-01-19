@@ -190,9 +190,9 @@
 
         m_media {
             bindings = <
-  &bootloader  &trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans      &trans            &trans        &trans           &trans
-  &trans       &trans  &trans        &trans        &trans          &trans      &kp K_PREV        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT
-  &bt BT_CLR   &trans  &trans        &trans        &trans          &trans      &trans            &trans        &trans           &trans
+  &bootloader  &trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans      &trans            &kp C_BRI_DEC  &kp C_BRI_UP     &trans
+  &trans       &trans  &trans        &trans        &trans          &trans      &kp K_PREV        &kp C_VOL_DN   &kp C_VOLUME_UP  &kp K_NEXT
+  &bt BT_CLR   &trans  &trans        &trans        &trans          &trans      &trans            &trans         &trans           &trans
                        &trans        &trans        &trans          &kp K_STOP  &kp K_PLAY_PAUSE  &kp K_MUTE
             >;
         };
