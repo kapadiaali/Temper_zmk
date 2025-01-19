@@ -16,14 +16,7 @@
 #define FUN 4
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <1 1>;
-            then-layer = <1>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         bspc_del: backspace_delete {
@@ -92,44 +85,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        a {
-            bindings = <&kp ESCAPE>;
-            key-positions = <1 0>;
-        };
-
-        b {
-            bindings = <&kp CAPS>;
-            key-positions = <11 10>;
-        };
-
-        c {
-            bindings = <&kp TAB>;
-            key-positions = <21 20>;
-        };
-
-        d {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <9 8>;
-        };
-
-        e {
-            bindings = <&kp ENTER>;
-            key-positions = <18 19>;
-        };
-
-        f {
-            bindings = <&kp MINUS>;
-            key-positions = <16 17>;
-        };
-
-        g {
-            bindings = <&kp EQUAL>;
-            key-positions = <17 18>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
