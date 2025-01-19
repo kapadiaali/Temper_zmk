@@ -139,7 +139,7 @@
   &kp Q  &kp W  &kp E         &kp R        &kp T            &kp Y        &kp U            &kp I         &kp O    &kp P
   &kp A  &kp S  &kp D         &kp F        &kp G            &kp H        &kp J            &kp K         &kp L    &kp SEMI
   &kp Z  &kp X  &kp C         &kp V        &kp B            &kp N        &kp M            &kp COMMA     &kp DOT  &kp FSLH
-                &lt 3 ESCAPE  &lt 2 SPACE  &mt LCTRL TAB    &lt 5 ENTER  &lt 4 BACKSPACE  &lt 6 DELETE
+                &lt 6 ESCAPE  &lt 2 SPACE  &mt LCTRL TAB    &lt 4 ENTER  &lt 3 BACKSPACE  &lt 5 DELETE
             >;
         };
 
@@ -158,15 +158,6 @@
   &none         &kp LEFT      &kp DEL       &kp RIGHT     &bt BT_CLR     &none        &none       &none       &none       &none
   &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bootloader    &bootloader  &none       &none       &none       &none
                               &trans        &trans        &trans         &trans       &trans      &trans
-            >;
-        };
-
-        arrow {
-            bindings = <
-  &trans          &kp UP_ARROW    &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans          &trans          &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                                  &trans     &trans  &trans    &trans  &trans  &trans
             >;
         };
 
@@ -194,6 +185,24 @@
   &kp F11  &kp F4  &kp F5     &kp F6     &kp SCROLLLOCK     &trans        &trans        &trans        &trans  &trans
   &kp F10  &kp F1  &kp F2     &kp F3     &kp PAUSE_BREAK    &trans        &trans        &trans        &trans  &bt BT_CLR
                    &mkp RCLK  &kp SPACE  &kp TAB            &trans        &trans        &trans
+            >;
+        };
+
+        m_media {
+            bindings = <
+  &bootloader  &trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans      &trans            &trans        &trans           &trans
+  &trans       &trans  &trans        &trans        &trans          &trans      &kp K_PREV        &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_NEXT
+  &bt BT_CLR   &trans  &trans        &trans        &trans          &trans      &trans            &trans        &trans           &trans
+                       &trans        &trans        &trans          &kp K_STOP  &kp K_PLAY_PAUSE  &kp K_MUTE
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
